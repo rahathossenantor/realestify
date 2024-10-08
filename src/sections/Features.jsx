@@ -4,7 +4,7 @@ import boxes from "../assets/svgs/boxes.svg";
 import gift from "../assets/svgs/gift.svg";
 import FeatureCard from "../components/FeatureCard";
 
-const Feature = () => {
+const Features = () => {
     return (
         <section className="pb-8 pt-20 dark:bg-dark lg:pb-[70px] lg:pt-[120px]">
             <div className="container">
@@ -51,4 +51,4 @@ const Feature = () => {
     );
 };
 
-export default Feature;
+export default Features;

@@ -1,13 +1,17 @@
 import Navbar from "./sections/Navbar";
 import Hero from "./sections/Hero";
-import Feature from "./sections/Feature";
+import Features from "./sections/Features";
+import Properties from "./sections/Properties";
+import About from "./sections/About";
 
 const App = () => {
   return (
     <>
       <Navbar />
       <Hero />
-      <Feature />
+      <Features />
+      <Properties />
+      <About />
     </>
   );
 };
