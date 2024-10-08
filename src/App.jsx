@@ -4,6 +4,7 @@ import Features from "./sections/Features";
 import Properties from "./sections/Properties";
 import About from "./sections/About";
 import Cta from "./sections/Cta";
+import Faq from "./sections/Faq";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Properties />
       <About />
       <Cta />
+      <Faq />
     </>
   );
 };
