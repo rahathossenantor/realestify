@@ -3,6 +3,7 @@ import Hero from "./sections/Hero";
 import Features from "./sections/Features";
 import Properties from "./sections/Properties";
 import About from "./sections/About";
+import Cta from "./sections/Cta";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Features />
       <Properties />
       <About />
+      <Cta />
     </>
   );
 };

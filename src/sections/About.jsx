@@ -1,6 +1,6 @@
 import aboutImage1 from "../assets/images/about/about-image-01.jpg";
 import aboutImage2 from "../assets/images/about/about-image-02.jpg";
-import Bg from "../assets/images/about/Bg";
+import AboutBg from "../assets/images/about/AboutBg";
 
 const About = () => {
     return (
@@ -64,7 +64,7 @@ const About = () => {
                                             Years of experience
                                         </span>
                                     </div>
-                                    <Bg />
+                                    <AboutBg />
                                 </div>
                             </div>
                         </div>

@@ -1,4 +1,4 @@
-const Bg = () => {
+const AboutBg = () => {
     return (
         <div>
             <span className="absolute left-0 top-0 -z-10">
@@ -101,4 +101,4 @@ const Bg = () => {
     );
 };
 
-export default Bg;
+export default AboutBg;
