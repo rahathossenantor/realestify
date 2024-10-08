@@ -1,5 +1,8 @@
 /* eslint-disable react/prop-types */
 import FooterSocialIcons from "../assets/images/footer/FooterSocialIcons";
+import logo from "../assets/images/logo/logo.svg";
+import blog1 from "../assets/images/blog/blog-footer-01.jpg";
+import blog2 from "../assets/images/blog/blog-footer-02.jpg";
 
 const Footer = () => {
     return (
@@ -13,7 +16,7 @@ const Footer = () => {
                                 className="mb-6 inline-block  max-h-[100px]"
                             >
                                 <img
-                                    src="./src/assets/images/logo/logo.svg"
+                                    src={logo}
                                     alt="logo"
                                     className="max-w-full"
                                 />
@@ -56,7 +59,7 @@ const Footer = () => {
                                 >
                                     <div className="overflow-hidden rounded">
                                         <img
-                                            src="./src/assets/images/blog/blog-footer-01.jpg"
+                                            src={blog1}
                                             alt="blog"
                                         />
                                     </div>
@@ -70,7 +73,7 @@ const Footer = () => {
                                 >
                                     <div className="overflow-hidden rounded">
                                         <img
-                                            src="./src/assets/images/blog/blog-footer-02.jpg"
+                                            src={blog2}
                                             alt="blog"
                                         />
                                     </div>
