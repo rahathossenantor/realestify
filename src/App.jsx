@@ -6,6 +6,7 @@ import About from "./sections/About";
 import Cta from "./sections/Cta";
 import Faq from "./sections/Faq";
 import Team from "./sections/Team";
+import Contact from "./sections/Contact";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Cta />
       <Faq />
       <Team />
+      <Contact />
     </>
   );
 };
