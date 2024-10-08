@@ -4,6 +4,33 @@ import boxes from "../assets/svgs/boxes.svg";
 import gift from "../assets/svgs/gift.svg";
 import FeatureCard from "../components/FeatureCard";
 
+const featuresData = [
+    {
+        id: 1,
+        title: "Premium Property Listings",
+        description: "Discover an array of hand-picked properties that meet the highest standards of luxury and comfort.",
+        icon: layout,
+    },
+    {
+        id: 2,
+        title: "Personalized Matching",
+        description: "Our advanced matching system pairs you with properties that align with your specific needs and desires.",
+        icon: boxes,
+    },
+    {
+        id: 3,
+        title: "Expert Guidance and Support",
+        description: "Benefit from the expertise of our dedicated team of real estate professionals.",
+        icon: gift,
+    },
+    {
+        id: 4,
+        title: "Virtual tours",
+        description: "Take advantage of our virtual tours and 3D walkthroughs to explore properties from the comfort of your home.",
+        icon: layer,
+    },
+];
+
 const Features = () => {
     return (
         <section className="pb-8 pt-20 dark:bg-dark lg:pb-[70px] lg:pt-[120px]">
@@ -15,7 +42,7 @@ const Features = () => {
                                 Features
                             </span>
                             <h2 className="mb-3 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]">
-                                Main Features Of Play
+                                Main Features of Play
                             </h2>
                             <p className="text-base text-body-color dark:text-dark-6">
                                 There are many variations of passages of Lorem Ipsum available but
@@ -25,26 +52,16 @@ const Features = () => {
                     </div>
                 </div>
                 <div className="-mx-4 flex flex-wrap">
-                    <FeatureCard
-                        title="Premium Property Listings"
-                        description="Discover an array of hand-picked properties that meet the highest standards of luxury and comfort."
-                        icon={gift}
-                    />
-                    <FeatureCard
-                        title="Personalized Matching"
-                        description="Our advanced matching system pairs you with properties that align with your specific needs and desires."
-                        icon={layout}
-                    />
-                    <FeatureCard
-                        title="Expert Guidance and Support"
-                        description="Benefit from the expertise of our dedicated team of real estate professionals."
-                        icon={boxes}
-                    />
-                    <FeatureCard
-                        title="Virtual Tours"
-                        description="Take advantage of our virtual tours and 3D walkthroughs to explore properties from the comfort of your home."
-                        icon={layer}
-                    />
+                    {
+                        featuresData.map((feature) => (
+                            <FeatureCard
+                                key={feature.id}
+                                title={feature.title}
+                                description={feature.description}
+                                icon={feature.icon}
+                            />
+                        ))
+                    }
                 </div>
             </div>
         </section>
