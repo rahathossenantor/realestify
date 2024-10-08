@@ -5,6 +5,7 @@ import Properties from "./sections/Properties";
 import About from "./sections/About";
 import Cta from "./sections/Cta";
 import Faq from "./sections/Faq";
+import Team from "./sections/Team";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <About />
       <Cta />
       <Faq />
+      <Team />
     </>
   );
 };
